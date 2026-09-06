@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "BIDA OSS Dashboard",
-  description: "Bangladesh Investment Development Authority - One Stop Service",
+  title: "Fast API || Next JS || MySQL Service Platform",
+  description: "Fast API || Next JS || MySQL Service Platform",
   icons: {
     icon: "/images/logo.png",
   },

@@ -6,7 +6,7 @@ export default function AuthLayout({ children }) {
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <Link href="/" className="flex justify-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            ServicePlatform
+            Fast API & React JS & MySQL Service Platform
           </h2>
         </Link>
       </div>

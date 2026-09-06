@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Logo from "@/components/ui/Image/Logo";
+import Link from "next/link"
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,9 @@ export default function Nav() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo  */}
                     <div class="flex-shrink-0">
-                        <a href="#" className="">
+                        <Link href="/">
                             <Logo className="w-32 sm:w-40 md:w-48"/>
-                        </a>
+                        </Link>
                     </div>
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
@@ -30,9 +31,12 @@ export default function Nav() {
                         <a href="#" className="text-gray-700 hover:text-blue-600">
                             Contact
                         </a>
-                        <a href="#" className="text-gray-700 hover:text-blue-600">
-                            Login
-                        </a>
+                        <Link href="/sign-in" className="text-gray-700 hover:text-blue-600">
+                            Sign In
+                        </Link>
+                        <Link href="/sign-up" className="text-gray-700 hover:text-blue-600">
+                            Sign Up
+                        </Link>
                     </div>
                     {/* Mobile Button */}
                     <button
@@ -55,7 +59,10 @@ export default function Nav() {
                             Contact
                         </a>
                         <a className="block py-2 text-gray-700 hover:text-blue-600">
-                            Login
+                            Sign In
+                        </a>
+                        <a className="block py-2 text-gray-700 hover:text-blue-600">
+                            Sign Up
                         </a>
                     </div>
                 </div>
